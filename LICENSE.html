@@ -1,22 +1,72 @@
-Copyright (c) 2013 Tadas Tamosauskas
+---
+layout: base
+title: Font Awesome License
+navbar_active: license
+relative_path: ../
+---
+{% capture jumbotron_h1 %}<i class="fa fa-gavel"></i>&nbsp; License{% endcapture %}
+{% capture jumbotron_p %}The full details of how Font Awesome is licensed{% endcapture %}
 
-MIT License
+{% include jumbotron.html %}
+{% include stripe-social.html %}
 
-Permission is hereby granted, free of charge, to any person obtaining
-a copy of this software and associated documentation files (the
-"Software"), to deal in the Software without restriction, including
-without limitation the rights to use, copy, modify, merge, publish,
-distribute, sublicense, and/or sell copies of the Software, and to
-permit persons to whom the Software is furnished to do so, subject to
-the following conditions:
+<div class="container">
+  {% capture stripe_ad_content %}
+  <p class="lead">
+    Font Awesome is fully open source and is GPL compatible. You can use it for commercial projects, open source
+    projects, or really just about whatever you want.
+  </p>
+  {% endcapture %}
+  {% include stripe-ad.html %}
 
-The above copyright notice and this permission notice shall be
-included in all copies or substantial portions of the Software.
+  <section>
+    <div class="alert alert-success">
+      <ul class="fa-ul margin-bottom-none">
+        <li>
+          <i class="fa-li fa fa-info-circle fa-lg"></i>Attribution is no longer required as of Font Awesome 3.0 but is much appreciated:
+          "Font Awesome by Dave Gandy - http://fontawesome.io".
+        </li>
+      </ul>
+    </div>
+  </section>
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
-LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
-OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
-WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+  <section>
+    <h2 class="page-header">Font License</h2>
+    <ul>
+      <li>
+        Applies to all desktop and webfont files in the following directory:
+        <code>font-awesome/fonts/</code>.
+      </li>
+      <li>License: {{ site.fontawesome.license.font.version }}</li>
+      <li>URL: <a href="{{ site.fontawesome.license.font.url }}">{{ site.fontawesome.license.font.url }}</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 class="page-header">Code License</h2>
+    <ul>
+      <li>
+        Applies to all CSS and LESS files in the following directories:
+        <code>font-awesome/css/</code>,
+        <code>font-awesome/less/</code>, and
+        <code>font-awesome/scss/</code>.
+      </li>
+      <li>License: {{ site.fontawesome.license.code.version }}</li>
+      <li>URL: <a href="{{ site.fontawesome.license.code.url }}">{{ site.fontawesome.license.code.url }}</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 class="page-header">Documentation License</h2>
+    <ul>
+      <li>Applies to all Font Awesome project files that are not a part of the Font or Code licenses.</li>
+      <li>License: {{ site.fontawesome.license.documentation.version }}</li>
+      <li>URL: <a href="{{ site.fontawesome.license.documentation.url }}">{{ site.fontawesome.license.documentation.url }}</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 class="page-header">Brand Icons</h2>
+    {% include brand-license.html %}
+  </section>
+</div>
