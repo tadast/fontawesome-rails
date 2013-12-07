@@ -24,6 +24,12 @@ If you are using SASS
 
 Add CSS classes to DOM elements e.g. class='fa fa-bookmark'. [See all icons](http://fontawesome.io/icons/)
 
+## Troubleshooting
+
+Restart your Rails application.
+
+Assets might get cached, removing `//=require "fontawesome"`, refreshing and adding it back in might help.
+
 ## Versioning
 
 The gem follows Fontawesome versioning conventions e.g. if you need `4.0.3` version of fontawesome
