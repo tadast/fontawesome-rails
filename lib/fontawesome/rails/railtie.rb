@@ -2,9 +2,7 @@ require 'pry'
 module Fontawesome
   module Rails
     class Railtie < ::Rails::Railtie
-      config.assets.paths << File.join(File.dirname(__FILE__), '..', '..', '..', 'vendor', 'assets', 'fonts').to_s
-
-      config.assets.precompile += %w( .eot .woff .ttf)
+      config.assets.precompile += %w( fontawesome-webfont.eot fontawesome-webfont.woff fontawesome-webfont.ttf fontawesome-webfont.svg )
     end
   end
 end
