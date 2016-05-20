@@ -1,8 +1,9 @@
 module Fontawesome
   module Rails
     class Railtie < ::Rails::Railtie
-      config.assets.paths << File.join(File.dirname(__FILE__), '..', '..', '..', 'vendor', 'assets', 'fonts').to_s
-      config.assets.precompile += %w( .eot .woff .ttf)
+      config.assets.precompile += %w(
+        FontAwesome.otf fontawesome-webfont.eot fontawesome-webfont.svg fontawesome-webfont.ttf fontawesome-webfont.woff fontawesome-webfont.woff2 fontawesome.css.erb
+      )
     end
   end
 end
